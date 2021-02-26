@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylePages.css">
+    <title>home</title>
+
+
+</head>
+
+<body>
+
+    <ul id="nav" class="nav nav-tabs">
+    <h1 class="header">HUBSPOT CLIENT INPUT</h1>
+    </ul>
+
+    
+
+    <div class="headers">
+        <h2>Companies</h2>
+        <h2  id="contacts">Contacts</h2>
+        <h2 id="deals">Deals</h2>
+    </div>
+
+    <div class="spacing">
+    
+        <div class="container">
+            <div class="mb-3">
+    
+                <form action="/companies" method="POST">
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">CITY</span>
+                        <input type="text" name="companyCity" id="companyCity" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">DOMIAN</span>
+                        <input type="text" name="companyDomain" id="companyDomain" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">INDUSTRY</span>
+                        <input type="text" name="companyIndustry" id="companyIndustry" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">NAME</span>
+                        <input type="text" name="companyName" id="compyName" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">PHONE NUMBER</span>
+                        <input type="text" name="companyPhoneNumber" id="companyPhoneNumber" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">STATE</span>
+                        <input type="text" name="companyState" id="companyState" /><br />
+                    </div>
+    
+                    <button class="btn btn-primary" type="submit"> Submit Contact </button>
+    
+                </form>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="mb-3">
+                <form action='/contacts' method="POST">
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">COMPANY</span>
+                        <input type="text" name="contactCompany" id="contactCompany" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">EMAIL</span>
+                        <input type="text" name="contactEmail" id="contactEmail" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">FIRST NAME</span>
+                        <input type="text" name="contactFirstName" id="contactFirstNmae" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">LAST NAME</span>
+                        <input type="text" name="contactLastName" id="contactLastName" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">PHONE NUMBER</span>
+                        <input type="text" name="contactPhoneNumber" id="contactPhoneNumber" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">WEBSITE</span>
+                        <input type="text" name="contactWebsite" id="contactWebsite" /><br />
+                    </div>
+    
+                    <button class="btn btn-primary" type="submit"> Submit Company </button>
+    
+                </form>
+            </div>
+        </div>
+    
+        
+        <div class="container" class="spacing2">
+            <div class="mb-3">
+                <form action="/deals" method="POST">
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">AMOUNT</span>
+                        <input required type="text" name="dealAmount" id="dealAmount" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">CLOSEDATE</span>
+                        <input required type="text" name="dealCloseDate" id="dealCloseDate" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">DEAL NAME</span>
+                        <input required type="text" name="dealName" id="dealName" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">DEAL STAGE</span>
+                        <input required type="text" name="contactLastName" id="dealStage" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default"> HUBESPOT OWNER ID</span>
+                        <input required type="text" name="dealHotSpot" id="dealHotSpot" /><br />
+                    </div>
+    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">PIPELINE</span>
+                        <input required type="text" name="dealPipeLine" id="dealPipeLine" /><br />
+                    </div>
+    
+                    <button class="btn btn-primary" type="submit"> Submit Company </button>
+    
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    {{#if message}}
+    <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}
+     {{#if message1}}
+        <h4 class="alert alert-danger mt-4">{{message1}}</h4>
+    {{/if}}
+    {{#if message2}}
+        <h4 class="alert alert-danger mt-4">{{message2}}</h4>
+    {{/if}}
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
